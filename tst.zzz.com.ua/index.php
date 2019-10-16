@@ -6,6 +6,11 @@
 <input type="radio" name="jql" value="RFC">RFC</br>
 <input type="radio" name="jql" value="Release">Release</br>
 </p>
+
+*открытые алерты по имени сервиса
+*открытые и переданные по имени сервиса
+*алерты за промежуток времени
+
 <input type="submit">
 </form>
 <?php include_once "footer.php";?>
