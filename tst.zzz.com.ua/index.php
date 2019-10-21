@@ -1,4 +1,5 @@
 <?php include_once "header.php";?>
+<!--
 <form action="https://sd.finam.ru/issues/">
 <p><b>Type:</b><Br>
 <input type="radio" name="jql" value="Incident">Incident</br>
@@ -18,6 +19,15 @@
 <p>*открытые алерты по имени сервиса <p>
 <p>*открытые и переданные по имени сервиса <p>
 <p>*алерты за промежуток времени <p>
-
+-->
+  <form action = 'https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%<?php $_POST['date_to'];?>%20after%<?php $_POST['date_from'];?>' method="post">
+          <label for="date_from">От: </label>
+<!-- <input type="datetime-local" id="date_from" name="date_from"/> <input type="datetime-local" id="date_to" name="date_to"/><br />   -->
+<input type="date" id="date_from" name="date_from"/> <input type="date" id="date_to" name="date_to"/><br />
+          <button type="submit">Отправить</button>
+  </form>
 
 <?php include_once "footer.php";?>
+
+<!--https://sd.finam.ru/issues/?filter=44352&jql=status%20was%20Done%20by%20mpolischuk%20before%202019-10-15%20after%202019-10-14-->
+<!--https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%202019-10-15%20after%202019-10-14-->
