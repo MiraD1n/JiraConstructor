@@ -5,3 +5,4 @@ echo '<form enctype="multipart/form-data" name="upload_bage" id="upload_bage" ac
         <input type="submit" value="Отправить файл" />
       </form>';
 ?>
+<a href="fotoes/32.png"><img src="sferas.png" width="100"
