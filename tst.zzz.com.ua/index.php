@@ -20,7 +20,17 @@
 <p>*открытые и переданные по имени сервиса <p>
 <p>*алерты за промежуток времени <p>
 -->
-  <form action = 'https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%<?php $_POST['date_to'];?>%20after%<?php $_POST['date_from'];?>' method="post">
+
+<?php
+if ($_POST){
+$date_to = $_POST['date_to'];
+$date_from = $_POST['date_from'];
+header("Location: https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%20$date_to%20after%20$date_from");
+}
+
+?>
+<!--  <form action = 'https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%%20after%<?php $_POST['date_from'];?>' method="post"> -->
+  <form action = "" method="post">
           <label for="date_from">От: </label>
 <!-- <input type="datetime-local" id="date_from" name="date_from"/> <input type="datetime-local" id="date_to" name="date_to"/><br />   -->
 <input type="date" id="date_from" name="date_from"/> <input type="date" id="date_to" name="date_to"/><br />
@@ -29,5 +39,5 @@
 
 <?php include_once "footer.php";?>
 
-<!--https://sd.finam.ru/issues/?filter=44352&jql=status%20was%20Done%20by%20mpolischuk%20before%202019-10-15%20after%202019-10-14-->
-<!--https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%202019-10-15%20after%202019-10-14-->
+
+<!--Must be: https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%202019-10-15%20after%202019-10-14 -->
