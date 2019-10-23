@@ -1,5 +1,5 @@
 <?php include_once "header.php";?>
-<form action = "make_url.php" method="post">
+<form action = "period_incidents.php" method="post">
 Hours from: <select id="hour_from" name="hour_from">
   <option>00</option>
   <option>01</option>
@@ -82,10 +82,15 @@ Mints from: <select id="minutes_to" name="minutes_to">
   <option>50</option>
   <option>55</option>
 </select>
-Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/><br />
-
-          <button type="submit">Отправить</button>
+Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/>
+<button type="submit">Отправить</button>
   </form>
+
+Связанные события с этим обьектом:
+<form action = "object_incidents.php" method="post">
+<input type="text" id="object" name="object"/>
+<button type="submit">Отправить</button>
+</form>
 
 <?php include_once "footer.php";?>
 
