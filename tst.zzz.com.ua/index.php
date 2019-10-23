@@ -21,16 +21,9 @@
 <p>*алерты за промежуток времени <p>
 -->
 
-<?php
-if ($_POST){
-$date_to = $_POST['date_to'];
-$date_from = $_POST['date_from'];
-header("Location: https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%20$date_to%20after%20$date_from");
-}
 
-?>
 <!--  <form action = 'https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%%20after%<?php $_POST['date_from'];?>' method="post"> -->
-  <form action = "" method="post">
+  <form action = "make_url.php" method="post">
           <label for="date_from">От: </label>
 <!-- <input type="datetime-local" id="date_from" name="date_from"/> <input type="datetime-local" id="date_to" name="date_to"/><br />   -->
 <input type="date" id="date_from" name="date_from"/> <input type="date" id="date_to" name="date_to"/><br />
