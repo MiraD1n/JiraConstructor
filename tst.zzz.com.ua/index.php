@@ -26,7 +26,26 @@
   <form action = "make_url.php" method="post">
           <label for="date_from">От: </label>
 <!-- <input type="datetime-local" id="date_from" name="date_from"/> <input type="datetime-local" id="date_to" name="date_to"/><br />   -->
-<input type="date" id="date_from" name="date_from"/> <input type="date" id="date_to" name="date_to"/><br />
+
+<select id="hour_from" name="hour_from">
+  <option>12</option>
+  <option>13</option>
+</select>
+<select id="minutes_from" name="minutes_from">
+  <option>12</option>
+  <option>13</option>
+</select>
+<input type="date" id="date_from" name="date_from"/>
+
+<select id="hour_to" name="hour_to">
+  <option>12</option>
+  <option>13</option>
+</select>
+<select id="minutes_to" name="minutes_to">
+  <option>12</option>
+  <option>13</option>
+</select>
+<input type="date" id="date_to" name="date_to"/><br />
           <button type="submit">Отправить</button>
   </form>
 
