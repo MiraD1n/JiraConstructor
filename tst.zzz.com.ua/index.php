@@ -24,28 +24,117 @@
 
 <!--  <form action = 'https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%%20after%<?php $_POST['date_from'];?>' method="post"> -->
   <form action = "make_url.php" method="post">
-          <label for="date_from">От: </label>
+<!--   work but comment       <label for="date_from">От: </label> -->
 <!-- <input type="datetime-local" id="date_from" name="date_from"/> <input type="datetime-local" id="date_to" name="date_to"/><br />   -->
 
-<select id="hour_from" name="hour_from">
+Hours from: <select id="hour_from" name="hour_from">
+  <option>00</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
   <option>12</option>
   <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
 </select>
-<select id="minutes_from" name="minutes_from">
+Mints from: <select id="minutes_from" name="minutes_from">
+  <option>00</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
   <option>12</option>
   <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
 </select>
-<input type="date" id="date_from" name="date_from"/>
+Dates from: <input type="date" id="date_from" name="date_from"/>
 
-<select id="hour_to" name="hour_to">
+Hours from: <select id="hour_to" name="hour_to">
+  <option>00</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
   <option>12</option>
   <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
 </select>
-<select id="minutes_to" name="minutes_to">
+Mints from: <select id="minutes_to" name="minutes_to">
+  <option>00</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+  <option>10</option>
+  <option>11</option>
   <option>12</option>
   <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
 </select>
-<input type="date" id="date_to" name="date_to"/><br />
+Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/><br />
+
           <button type="submit">Отправить</button>
   </form>
 
