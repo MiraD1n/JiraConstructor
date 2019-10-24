@@ -44,7 +44,7 @@ Mints from: <select id="minutes_from" name="minutes_from">
 </select>
 Dates from: <input type="date" id="date_from" name="date_from"/>
 
-Hours from: <select id="hour_to" name="hour_to">
+Hours to: &nbsp; <select id="hour_to" name="hour_to">
   <option>00</option>
   <option>01</option>
   <option>02</option>
@@ -70,8 +70,7 @@ Hours from: <select id="hour_to" name="hour_to">
   <option>22</option>
   <option>23</option>
 </select>
-Mints from: <select id="minutes_to" name="minutes_to">
-  <option>00</option>
+Minutes to: <select id="minutes_to" name="minutes_to">
   <option>05</option>
   <option>10</option>
   <option>15</option>
