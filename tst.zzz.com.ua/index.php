@@ -91,7 +91,7 @@ Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/>
 *** Связанные события с этим обьектом ***
 <form action = "object_incidents.php" method="post">
 Вставить "Key" обьекта
-<input type="text" id="object" name="object"/><button type="submit">Отправить</button>
+IT-<input type="text" id="object" name="object"/><button type="submit">Отправить</button>
 </form>
 <p><img src="key.jpg" alt="key"></p>
 <?php include_once "footer.php";?>
