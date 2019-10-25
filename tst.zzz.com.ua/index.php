@@ -84,6 +84,7 @@ Minutes to: <select id="minutes_to" name="minutes_to">
   <option>55</option>
 </select>
 Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/>
+&#10071; За большой промежуток времени запрос формируется долго
 <input type="submit" name="action" value="Jira" />
 <input type="submit" name="action" value="Zabbix" />
 </form>
