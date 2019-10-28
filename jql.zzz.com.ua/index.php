@@ -102,6 +102,3 @@ IT-<input type="text" id="object" name="object"/><button type="submit">Отпр�
 </form>
 <p><img src="key.jpg" alt="key"></p>
 <?php include_once "footer.php";?>
-
-
-<!--Must be: https://sd.finam.ru/issues/?jql=status%20was%20Done%20by%20mpolischuk%20before%202019-10-15%20after%202019-10-14 -->
