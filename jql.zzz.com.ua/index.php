@@ -89,6 +89,12 @@ Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/>
 <input type="submit" name="action" value="Zabbix" />
 </form>
 
+*** Поиск RFC по имени обьекта ***
+<form action = "rfc_finder.php" method="post">
+Имя обьекта
+<input type="text" id="object" name="object"/><button type="submit">Отправить</button>
+</form>
+
 *** Связанные события с этим обьектом ***
 <form action = "object_incidents.php" method="post">
 Вставить "Key" обьекта
