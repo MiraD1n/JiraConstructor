@@ -95,6 +95,13 @@ Dates to: &nbsp; <input type="date" id="date_to" name="date_to"/>
 <input type="text" id="object" name="object"/><button type="submit">Отправить</button>
 </form>
 
+*** Последние инциденты с этим обьектом ***
+<form action = "incident_finder.php" method="post">
+Имя обьекта
+<input type="text" id="object" name="object"/><button type="submit">Отправить</button>
+</form>
+
+
 *** Связанные события с этим обьектом ***
 <form action = "object_incidents.php" method="post">
 Вставить "Key" обьекта
